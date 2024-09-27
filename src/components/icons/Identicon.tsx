@@ -1,7 +1,7 @@
 // import jazzicon from '@metamask/jazzicon';
 import { memo } from 'react';
 
-import { isValidAddressEvm, normalizeAddressEvm } from '@hyperlane-xyz/utils';
+import { isValidAddressEvm } from '@hyperlane-xyz/utils';
 import { Circle } from '@hyperlane-xyz/widgets';
 
 type Props = {
@@ -10,10 +10,10 @@ type Props = {
 };
 
 // This should match metamask: https://github.com/MetaMask/metamask-extension/blob/master/ui/helpers/utils/icon-factory.js#L84
-function addressToSeed(address: string) {
-  const addrStub = normalizeAddressEvm(address).slice(2, 10);
-  return parseInt(addrStub, 16);
-}
+// function addressToSeed(address: string) {
+//   const addrStub = normalizeAddressEvm(address).slice(2, 10);
+//   return parseInt(addrStub, 16);
+// }
 
 // TODO move to widgets lib
 function _Identicon({ address, size: _size }: Props) {
