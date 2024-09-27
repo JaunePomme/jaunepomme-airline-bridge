@@ -2,5 +2,52 @@
 # These configs will be merged with the warp routes in the configured registry
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
-tokens: []
+# Dans mon fichier arbitrum-base-config.yml
+# yaml-language-server: $schema=../schema.json
+# tokens:
+#   - addressOrDenom: "0x2dBFfbc5447A372DfD278704541652DA010498c1"
+#     chainName: arbitrum
+#     collateralAddressOrDenom: "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"
+#     connections:
+#       - token: ethereum|base|0x2dBFfbc5447A372DfD278704541652DA010498c1
+#     decimals: 18
+#     name: Wrapped Ether
+#     standard: EvmHypCollateral
+#     symbol: WETH
+#   - addressOrDenom: "0x2dBFfbc5447A372DfD278704541652DA010498c1"
+#     chainName: base
+#     connections:
+#       - token: ethereum|arbitrum|0x2dBFfbc5447A372DfD278704541652DA010498c1
+#     decimals: 18
+#     name: Wrapped Ether
+#     standard: EvmHypSynthetic
+#     symbol: WETH
+
+tokens: [{
+      addressOrDenom: "0x2dBFfbc5447A372DfD278704541652DA010498c1",
+      chainName: "arbitrum",
+      collateralAddressOrDenom: "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      connections: [
+        {
+          token: "ethereum|base|0x2dBFfbc5447A372DfD278704541652DA010498c1"
+        }
+      ],
+      decimals: 18,
+      name: "Wrapped Ether",
+      standard: "EvmHypCollateral",
+      symbol: "WETH"
+    },
+    {
+      addressOrDenom: "0x2dBFfbc5447A372DfD278704541652DA010498c1",
+      chainName: "base",
+      connections: [
+        {
+          token: "ethereum|arbitrum|0x2dBFfbc5447A372DfD278704541652DA010498c1"
+        }
+      ],
+      decimals: 18,
+      name: "Wrapped Ether",
+      standard: "EvmHypSynthetic",
+      symbol: "WETH"
+    }]
 options: {}
