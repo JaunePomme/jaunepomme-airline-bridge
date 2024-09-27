@@ -6,6 +6,6 @@ export const links = {
   docs: 'https://docs.hyperlane.xyz',
   gasDocs: 'https://docs.hyperlane.xyz/docs/reference/hooks/interchain-gas',
   chains: 'https://docs.hyperlane.xyz/docs/resources/domains',
-  twitter: 'https://twitter.com/hyperlane',
+  twitter: 'https://twitter.com/JaunesPommes',
   blog: 'https://medium.com/hyperlane',
 };

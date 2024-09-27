@@ -238,7 +238,7 @@ function ButtonSection({
     return (
       <ConnectAwareSubmitButton
         chainName={values.origin}
-        text={isValidating ? 'Validating...' : 'Continue'}
+        text={isValidating ? 'Validating...' : 'Décollage'}
         classes="mt-4 px-3 py-1.5"
       />
     );

@@ -8,7 +8,8 @@ export const Color = {
   white: themeColors.white,
   gray: themeColors.gray[500],
   lightGray: themeColors.gray[200],
-  primary: themeColors.primary[500],
+  // primary: themeColors.primary[500],
+  primary: '#F5DEB3',
   accent: themeColors.accent[500],
   red: themeColors.red[500],
 } as const;
