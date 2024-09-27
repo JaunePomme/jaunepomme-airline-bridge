@@ -1,4 +1,4 @@
-import jazzicon from '@metamask/jazzicon';
+// import jazzicon from '@metamask/jazzicon';
 import { memo } from 'react';
 
 import { isValidAddressEvm, normalizeAddressEvm } from '@hyperlane-xyz/utils';
@@ -24,7 +24,7 @@ function _Identicon({ address, size: _size }: Props) {
     return <Circle size={size} classes="bg-primary-500" title="" />;
   }
 
-  const jazziconResult = jazzicon(size, addressToSeed(address));
+  // const jazziconResult = jazzicon(size, addressToSeed(address));
 
   return (
     <div
@@ -32,7 +32,7 @@ function _Identicon({ address, size: _size }: Props) {
       ref={(nodeElement) => {
         if (nodeElement) {
           nodeElement.innerHTML = '';
-          nodeElement.appendChild(jazziconResult);
+          // nodeElement.appendChild(jazziconResult);
         }
       }}
     ></div>
