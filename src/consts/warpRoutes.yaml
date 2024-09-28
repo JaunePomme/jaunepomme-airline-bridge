@@ -35,7 +35,8 @@ tokens: [{
       decimals: 18,
       name: "Wrapped Ether",
       standard: "EvmHypCollateral",
-      symbol: "WETH"
+      symbol: "WETH",
+      logoURI: '/logos/weth.png',
     },
     {
       addressOrDenom: "0x2dBFfbc5447A372DfD278704541652DA010498c1",
@@ -48,6 +49,7 @@ tokens: [{
       decimals: 18,
       name: "Wrapped Ether",
       standard: "EvmHypSynthetic",
-      symbol: "WETH"
+      symbol: "WETH",
+      logoURI: '/logos/weth.png',
     }]
 options: {}
