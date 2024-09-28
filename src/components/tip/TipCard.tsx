@@ -16,9 +16,9 @@ export function TipCard() {
       <h2 className="text-primary-500">Bridge Tokens with JaunesPommes Airline Warp Routes!</h2>
       <div className="flex items-end justify-between">
         <p className="mt-1 text-xs max-w-[75%]">
-          Attachez vos ceintures, nous entrons dans une zone de turbulence ! J'ai rajouté
-          Arbitrum-Base pour le token WETH. (c'est mon bridge hyperlane) Y'a déjà un tas de chains
-          par défaut et juste le token ezEth.
+          Attachez vos ceintures, nous entrons dans une zone de turbulence ! Ajout Arbitrum-Base
+          pour le token WETH. (cest mon bridge hyperlane) Ya dja un tas de chains par defaut et
+          juste le token ezEth.
         </p>
         <a
           href={links.github}
